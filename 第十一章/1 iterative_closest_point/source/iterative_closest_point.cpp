@@ -2,12 +2,11 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 #include <pcl/registration/icp.h>
-int
- main (int argc, char** argv)
+int main (int argc, char** argv)
 {
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_in (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_out (new pcl::PointCloud<pcl::PointXYZ>);
-  // ÌîÈëµãÔÆÊý¾Ý
+  // ÃŒÃ®ÃˆÃ«ÂµÃ£Ã”Ã†ÃŠÃ½Â¾Ã
   cloud_in->width    = 5;
   cloud_in->height   = 1;
   cloud_in->is_dense = false;
